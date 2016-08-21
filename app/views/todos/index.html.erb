@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Remark</th>
       <th>Is finished</th>
       <th>Created</th>
       <th colspan="3"></th>
@@ -22,6 +23,7 @@
             <%= todo.title %>
           <% end %>
         </td>
+        <td><%= todo.remark %></td>
         <td><%= todo.is_finished %></td>
         <td><%= time_ago_in_words todo.created_at%> ago</td>
         <td><%= link_to 'Show', todo %></td>
